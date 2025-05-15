@@ -130,7 +130,7 @@ def download_email_attachments(EMAIL, SENDER_EMAIL, APP_PASSWORD, DOWNLOAD_FOLDE
 
 def schedule_downloads():
     excel_file = 'credentials.xlsx'
-    workbook = openpyxl.load_workbook(excel_file)
+    workbook = openpyxl.load_workbook(excel_file,data_only=True)
     sheet = workbook.active
 
     url = "https://sunrisediam.com:8223/api/employee/employee_login"
