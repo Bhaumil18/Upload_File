@@ -179,7 +179,8 @@ def schedule_downloads():
 
 # schedule_downloads()
 # Set schedule
-schedule.every().hour.at(":40").do(schedule_downloads)
+schedule.every().hour.at(":00").do(schedule_downloads)
+
 
 log_message("🔁 Scheduler started. ")
 
