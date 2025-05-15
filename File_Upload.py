@@ -104,7 +104,7 @@ def download_email_attachments(EMAIL, SENDER_EMAIL, APP_PASSWORD, DOWNLOAD_FOLDE
                 return
 
             for part in msg.walk():
-                if part.get_content_disposition() == "attachment":
+                if part.get_content_disposition() == "attachments":
                     filename = part.get_filename()
                     if filename:
                         decoded_filename, encoding = decode_header(filename)[0]
@@ -151,7 +151,7 @@ def schedule_downloads():
             upload_time = datetime.combine(now.date(), upload_time_obj)
             time_diff = abs((upload_time - now).total_seconds())
 
-            if time_diff < 60:
+            if time_diff < 600:
                 supp_name = sheet[f"A{8 + i}"].value
                 log_message(f"⏰ Triggering for Supp Name: {supp_name}, Time match: {upload_time_obj}")
                 ind = i
@@ -164,6 +164,10 @@ def schedule_downloads():
             sender_email = sheet[f"C{8 + ind}"].value
             party_id = sheet[f"B{8 + ind}"].value
             sheet_name = sheet[f"E{8 + ind}"].value
+            if(party_id == 22375):
+                yesterday = datetime.today() - timedelta(days=1)
+                sheet_name = sheet_name + " " +yesterday.strftime("%d-%m-%Y")
+            
             active = sheet[f"G{8 + ind}"].value
 
             if active == "Active":
@@ -179,7 +183,7 @@ def schedule_downloads():
 
 # schedule_downloads()
 # Set schedule
-schedule.every().hour.at(":00").do(schedule_downloads)
+schedule.every().hour.at(":15").do(schedule_downloads)
 
 
 log_message("🔁 Scheduler started. ")
