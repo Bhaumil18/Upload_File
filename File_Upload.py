@@ -177,12 +177,12 @@ def schedule_downloads():
                     token=token
                 )
 
-schedule_downloads()
-# # Set schedule
-# schedule.every().hour.at(":40").do(schedule_downloads)
+# schedule_downloads()
+# Set schedule
+schedule.every().hour.at(":40").do(schedule_downloads)
 
-# log_message("🔁 Scheduler started. ")
+log_message("🔁 Scheduler started. ")
 
-# while True:
-#     schedule.run_pending()
-#     time_module.sleep(1)
+while True:
+    schedule.run_pending()
+    time_module.sleep(1)
