@@ -1,0 +1,1 @@
+This folder consists of file downloaded from gmail and will be removed after the upload process completed.
