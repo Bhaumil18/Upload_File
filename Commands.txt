@@ -1,2 +1,3 @@
 Upload new credentials.xlsx file to UBUNTU (Powershell) : scp -i "C:\Users\bhaum\OneDrive\Desktop\File_Upload\CD.pem" "C:\Users\bhaum\OneDrive\Desktop\File_Upload\credentials.xlsx" ubuntu@54.242.28.72:~/Upload_File
 
+Run File : nohup python3 File_Upload.py > output.log 2>&1 &
