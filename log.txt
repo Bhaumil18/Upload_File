@@ -1,0 +1,47 @@
+[Thursday 2025-05-15 15:37:13] 🔁 Scheduler started. 
+[Thursday 2025-05-15 15:37:42] 🔁 Scheduler started. 
+[Thursday 2025-05-15 15:38:00] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:39:16] 🔁 Scheduler started. 
+[Thursday 2025-05-15 15:40:01] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:40:01] ⏰ Triggering for Supp Name: Bhaumil, Time match: 15:40:00
+[Thursday 2025-05-15 15:41:22] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:41:22] ⏰ Triggering for Supp Name: Bhaumil, Time match: 15:42:00
+[Thursday 2025-05-15 15:42:21] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:42:21] ⏰ Triggering for Supp Name: Bhaumil, Time match: 15:43:00
+[Thursday 2025-05-15 15:42:24] No emails found from this sender.
+[Thursday 2025-05-15 15:48:44] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:48:44] ⏰ Triggering for Supp Name: Rajesh, Time match: 15:49:00
+[Thursday 2025-05-15 15:48:47] No emails found from this sender.
+[Thursday 2025-05-15 15:50:58] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:50:58] ⏰ Triggering for Supp Name: Rajesh, Time match: 15:51:00
+[Thursday 2025-05-15 15:51:02] No emails found from this sender.
+[Thursday 2025-05-15 15:51:56] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:51:56] ⏰ Triggering for Supp Name: Rajesh, Time match: 15:51:00
+[Thursday 2025-05-15 15:51:59] No emails found from this sender.
+[Thursday 2025-05-15 15:52:11] ✅ Token fetched successfully.
+[Thursday 2025-05-15 15:52:11] ⏰ Triggering for Supp Name: Rajesh, Time match: 15:52:00
+[Thursday 2025-05-15 15:52:17] 📨 Latest Email Subject: Regarding the Full Stock
+[Thursday 2025-05-15 15:52:17] 📅 Received At: 2025-05-14 18:32:24+00:00
+[Thursday 2025-05-15 15:52:17] ✅ Downloaded: diamonds 14-05-2025-B0z7.xlsx → attachments\diamonds 14-05-2025-B0z7.xlsx
+[Thursday 2025-05-15 15:52:19] ❌ Upload failed.
+[Thursday 2025-05-15 15:52:19] Status Code: 409
+[Thursday 2025-05-15 15:52:19] Response: {
+  "statusCode": 409,
+  "Supplier_Id": 22375,
+  "Party_Name": "R.RAJESH EXPORTS",
+  "message": "Object reference not set to an instance of an object."
+}
+[Thursday 2025-05-15 15:52:19] 🗑️ Deleted: attachments\diamonds 14-05-2025-B0z7.xlsx
+[Thursday 2025-05-15 16:00:13] ✅ Token fetched successfully.
+[Thursday 2025-05-15 16:00:13] ⏰ Triggering for Supp Name: Rajesh, Time match: 16:01:00
+[Thursday 2025-05-15 16:00:19] 📨 Latest Email Subject: Regarding the Full Stock
+[Thursday 2025-05-15 16:00:19] 📅 Received At: 2025-05-14 18:32:24+00:00
+[Thursday 2025-05-15 16:00:19] ✅ Downloaded: diamonds 14-05-2025-B0z7.xlsx → attachments\diamonds 14-05-2025-B0z7.xlsx
+[Thursday 2025-05-15 16:01:02] ✅ File uploaded successfully.
+[Thursday 2025-05-15 16:01:02] Response: {
+  "statusCode": 200,
+  "message": "File uploaded successfully.",
+  "Party_Name": "R.RAJESH EXPORTS",
+  "Stock_Data_Id": 82884
+}
+[Thursday 2025-05-15 16:01:02] 🗑️ Deleted: attachments\diamonds 14-05-2025-B0z7.xlsx

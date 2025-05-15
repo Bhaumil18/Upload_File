@@ -64,6 +64,7 @@ def post_downloaded_file(file_path, party_id, sheet_name, token):
 
 def download_email_attachments(EMAIL, SENDER_EMAIL, APP_PASSWORD, DOWNLOAD_FOLDER, party_id, sheet_name, token):
     import email.utils
+    print(SENDER_EMAIL)
 
     imap_server = "imap.gmail.com"
     mail = imaplib.IMAP4_SSL(imap_server)
@@ -176,11 +177,12 @@ def schedule_downloads():
                     token=token
                 )
 
-# Set schedule
-schedule.every().hour.at(":00").do(schedule_downloads)
+schedule_downloads()
+# # Set schedule
+# schedule.every().hour.at(":40").do(schedule_downloads)
 
-log_message("🔁 Scheduler started. ")
+# log_message("🔁 Scheduler started. ")
 
-while True:
-    schedule.run_pending()
-    time_module.sleep(1)
+# while True:
+#     schedule.run_pending()
+#     time_module.sleep(1)
